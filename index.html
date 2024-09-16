@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería Aroma y Sabor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cafetería Aroma y Sabor</h1>
+            <nav>
+                <ul>
+                    <li><a href="#bebidas">Bebidas</a></li>
+                    <li><a href="#comestibles">Comestibles</a></li>
+                    <li><a href="#confiteria">Confitería</a></li>
+                </ul>
+            </nav>
+            <button id="toggle-cart" aria-label="Ver carrito">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+    <main class="container">
+        <section id="bebidas">
+            <h2>Bebidas</h2>
+            <div class="menu" id="menu-bebidas"></div>
+        </section>
+        <section id="comestibles">
+            <h2>Comestibles</h2>
+            <div class="menu" id="menu-comestibles"></div>
+        </section>
+        <section id="confiteria">
+            <h2>Confitería</h2>
+            <div class="menu" id="menu-confiteria"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cafetería Aroma y Sabor. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <div id="carrito" class="carrito">
+        <div class="carrito-content">
+            <h3>Carrito de Compras</h3>
+            <ul id="items-carrito"></ul>
+            <p>Total: $<span id="total-carrito">0</span></p>
+            <button id="vaciar-carrito">Vaciar Carrito</button>
+        </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>
